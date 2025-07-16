@@ -1,0 +1,194 @@
+{
+  "payments": [
+    {
+      "status": "Approved",
+      "id": "d49ce3b0-221c-442f-9231-8bc511988cb8",
+      "amount": 1200.00,
+      "currency": "USD",
+      "receiver": {
+        "name": "John Doe",
+        "taxId": "987654321",
+        "account_number": "111111111",
+        "bank": "Bank of America"
+      },
+      "payer": {
+        "name": "Alice Smith",
+        "account_number": "222222222",
+        "bank": "Chase Bank",
+        "taxId": "123456789"
+      },
+      "transaction_date": "2023-10-01T12:00:00Z"
+    },
+    {
+      "status": "Rejected",
+      "id": "fc8576c6-97f1-40d0-9241-f541626e3a49",
+      "amount": 850.50,
+      "currency": "USD",
+      "receiver": {
+        "name": "Carlos Lima",
+        "taxId": "223344556",
+        "account_number": "333333333",
+        "bank": "Wells Fargo"
+      },
+      "payer": {
+        "name": "Maria Garcia",
+        "account_number": "444444444",
+        "bank": "Citibank",
+        "taxId": "998877665"
+      },
+      "transaction_date": "2023-10-02T14:30:00Z"
+    },
+    {
+      "status": "Pending",
+      "id": "4fd9b9e2-38d0-4a10-b5d6-43ad0891db48",
+      "amount": 500.75,
+      "currency": "USD",
+      "receiver": {
+        "name": "Lucas Nogueira",
+        "taxId": "112233445",
+        "account_number": "555555555",
+        "bank": "Santander"
+      },
+      "payer": {
+        "name": "Fernanda Souza",
+        "account_number": "666666666",
+        "bank": "HSBC",
+        "taxId": "554433221"
+      },
+      "transaction_date": "2023-10-03T09:45:00Z"
+    },
+    {
+      "status": "Approved",
+      "id": "23c27da3-bc9c-4650-8602-42dfd3a6c384",
+      "amount": 2000.00,
+      "currency": "USD",
+      "receiver": {
+        "name": "Emma Johnson",
+        "taxId": "998877665",
+        "account_number": "777777777",
+        "bank": "Bank of America"
+      },
+      "payer": {
+        "name": "Liam Brown",
+        "account_number": "888888888",
+        "bank": "Chase Bank",
+        "taxId": "223344556"
+      },
+      "transaction_date": "2023-10-04T16:00:00Z"
+    },
+    {
+      "status": "Pending",
+      "id": "f17f16b0-b6e3-4395-8fd8-03a64b8843fd",
+      "amount": 950.25,
+      "currency": "USD",
+      "receiver": {
+        "name": "Noah Wilson",
+        "taxId": "334455667",
+        "account_number": "999999999",
+        "bank": "Citibank"
+      },
+      "payer": {
+        "name": "Olivia Davis",
+        "account_number": "101010101",
+        "bank": "Wells Fargo",
+        "taxId": "667788990"
+      },
+      "transaction_date": "2023-10-05T11:20:00Z"
+    },
+    {
+      "status": "Rejected",
+      "id": "cacc5c6b-ec7f-4867-bbce-86ff23507c67",
+      "amount": 1100.00,
+      "currency": "USD",
+      "receiver": {
+        "name": "Sophia Martinez",
+        "taxId": "123123123",
+        "account_number": "121212121",
+        "bank": "Santander"
+      },
+      "payer": {
+        "name": "Mason Anderson",
+        "account_number": "131313131",
+        "bank": "HSBC",
+        "taxId": "321321321"
+      },
+      "transaction_date": "2023-10-06T13:10:00Z"
+    },
+    {
+      "status": "Approved",
+      "id": "2e13db41-93b1-4269-8ed5-bd0d09a4a4d1",
+      "amount": 1300.00,
+      "currency": "USD",
+      "receiver": {
+        "name": "Isabella Moore",
+        "taxId": "456456456",
+        "account_number": "141414141",
+        "bank": "Bank of America"
+      },
+      "payer": {
+        "name": "Ethan Lee",
+        "account_number": "151515151",
+        "bank": "Chase Bank",
+        "taxId": "654654654"
+      },
+      "transaction_date": "2023-10-07T10:00:00Z"
+    },
+    {
+      "status": "Pending",
+      "id": "86c73fd8-ff67-45f3-b79c-92cba8d75f4c",
+      "amount": 700.00,
+      "currency": "USD",
+      "receiver": {
+        "name": "Ava Taylor",
+        "taxId": "789789789",
+        "account_number": "161616161",
+        "bank": "Wells Fargo"
+      },
+      "payer": {
+        "name": "Logan White",
+        "account_number": "171717171",
+        "bank": "Citibank",
+        "taxId": "987987987"
+      },
+      "transaction_date": "2023-10-08T15:00:00Z"
+    },
+    {
+      "status": "Rejected",
+      "id": "275c6161-6d4b-4ff6-a245-72a2c9a38479",
+      "amount": 400.00,
+      "currency": "USD",
+      "receiver": {
+        "name": "Mia Harris",
+        "taxId": "159159159",
+        "account_number": "181818181",
+        "bank": "Santander"
+      },
+      "payer": {
+        "name": "James Martin",
+        "account_number": "191919191",
+        "bank": "HSBC",
+        "taxId": "951951951"
+      },
+      "transaction_date": "2023-10-09T17:15:00Z"
+    },
+    {
+      "status": "Approved",
+      "id": "88cf8f50-0d0f-4b3e-94a6-3d38999896f8",
+      "amount": 1600.00,
+      "currency": "USD",
+      "receiver": {
+        "name": "Charlotte Clark",
+        "taxId": "852852852",
+        "account_number": "202020202",
+        "bank": "Bank of America"
+      },
+      "payer": {
+        "name": "Benjamin Walker",
+        "account_number": "212121212",
+        "bank": "Chase Bank",
+        "taxId": "258258258"
+      },
+      "transaction_date": "2023-10-10T08:30:00Z"
+    }
+  ]
+}
