@@ -1,9 +1,12 @@
-using System;
 using PaymentProcessor.Worker.Application.Adapters.ExternalServices;
+using PaymentProcessor.Worker.Application.Adapters.ExternalServices.Notification;
 
 namespace PaymentProcessor.Worker.Application.Handlers.NotifyPayment;
 
-internal sealed class NotifyPaymentHandler(IPaymentExternalService paymentExternalService) 
+internal sealed class NotifyPaymentHandler(
+     IPaymentExternalService paymentExternalService,
+     INotificationExternalService notificationExternalService,
+     ISendNotificationRequestFactory sendNotificationRequestFactory) 
      : INotifyPaymentHandler
 {
      public async Task<bool> HandleAsync(CancellationToken cancellationToken)
@@ -14,10 +17,15 @@ internal sealed class NotifyPaymentHandler(IPaymentExternalService paymentExtern
                // TODO: ADDED LOGGER
                return false;
           }
-          
+
           foreach (var payment in payments.Content)
           {
-               // Todo: Adde logger and handle payment notification logic
+               var request = sendNotificationRequestFactory.Create(payment);
+               
+               if(!await notificationExternalService.SendNotificationAsync(
+                    request,
+                    cancellationToken))
+               return false;
           }
 
           return true;
