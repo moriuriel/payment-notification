@@ -3,7 +3,7 @@
     {
       "status": "Approved",
       "id": "d49ce3b0-221c-442f-9231-8bc511988cb8",
-      "amount": 1200.00,
+      "amount": 1200,
       "currency": "USD",
       "receiver": {
         "name": "John Doe",
@@ -22,7 +22,7 @@
     {
       "status": "Rejected",
       "id": "fc8576c6-97f1-40d0-9241-f541626e3a49",
-      "amount": 850.50,
+      "amount": 850.5,
       "currency": "USD",
       "receiver": {
         "name": "Carlos Lima",
@@ -60,7 +60,7 @@
     {
       "status": "Approved",
       "id": "23c27da3-bc9c-4650-8602-42dfd3a6c384",
-      "amount": 2000.00,
+      "amount": 2000,
       "currency": "USD",
       "receiver": {
         "name": "Emma Johnson",
@@ -98,7 +98,7 @@
     {
       "status": "Rejected",
       "id": "cacc5c6b-ec7f-4867-bbce-86ff23507c67",
-      "amount": 1100.00,
+      "amount": 1100,
       "currency": "USD",
       "receiver": {
         "name": "Sophia Martinez",
@@ -117,7 +117,7 @@
     {
       "status": "Approved",
       "id": "2e13db41-93b1-4269-8ed5-bd0d09a4a4d1",
-      "amount": 1300.00,
+      "amount": 1300,
       "currency": "USD",
       "receiver": {
         "name": "Isabella Moore",
@@ -136,7 +136,7 @@
     {
       "status": "Pending",
       "id": "86c73fd8-ff67-45f3-b79c-92cba8d75f4c",
-      "amount": 700.00,
+      "amount": 700,
       "currency": "USD",
       "receiver": {
         "name": "Ava Taylor",
@@ -155,7 +155,7 @@
     {
       "status": "Rejected",
       "id": "275c6161-6d4b-4ff6-a245-72a2c9a38479",
-      "amount": 400.00,
+      "amount": 400,
       "currency": "USD",
       "receiver": {
         "name": "Mia Harris",
@@ -174,7 +174,7 @@
     {
       "status": "Approved",
       "id": "88cf8f50-0d0f-4b3e-94a6-3d38999896f8",
-      "amount": 1600.00,
+      "amount": 1600,
       "currency": "USD",
       "receiver": {
         "name": "Charlotte Clark",
@@ -191,5 +191,66 @@
       "transaction_date": "2023-10-10T08:30:00Z"
     }
   ],
-  "notifications": []
+  "notifications": [
+    {
+      "id": "593c",
+      "Id": "d49ce3b0-221c-442f-9231-8bc511988cb8",
+      "Message": "Payment approved for 1200 USD to John Doe.",
+      "Recipient": "123456789"
+    },
+    {
+      "id": "18f1",
+      "Id": "fc8576c6-97f1-40d0-9241-f541626e3a49",
+      "Message": "Payment rejected for 850,5 USD to Carlos Lima.",
+      "Recipient": "998877665"
+    },
+    {
+      "id": "3646",
+      "Id": "4fd9b9e2-38d0-4a10-b5d6-43ad0891db48",
+      "Message": "Payment Pending for 500,75 USD to Lucas Nogueira.",
+      "Recipient": "554433221"
+    },
+    {
+      "id": "5e06",
+      "Id": "23c27da3-bc9c-4650-8602-42dfd3a6c384",
+      "Message": "Payment approved for 2000 USD to Emma Johnson.",
+      "Recipient": "223344556"
+    },
+    {
+      "id": "5e9c",
+      "Id": "f17f16b0-b6e3-4395-8fd8-03a64b8843fd",
+      "Message": "Payment Pending for 950,25 USD to Noah Wilson.",
+      "Recipient": "667788990"
+    },
+    {
+      "id": "87ee",
+      "Id": "cacc5c6b-ec7f-4867-bbce-86ff23507c67",
+      "Message": "Payment rejected for 1100 USD to Sophia Martinez.",
+      "Recipient": "321321321"
+    },
+    {
+      "id": "4b05",
+      "Id": "2e13db41-93b1-4269-8ed5-bd0d09a4a4d1",
+      "Message": "Payment approved for 1300 USD to Isabella Moore.",
+      "Recipient": "654654654"
+    },
+    {
+      "id": "f4f9",
+      "Id": "86c73fd8-ff67-45f3-b79c-92cba8d75f4c",
+      "Message": "Payment Pending for 700 USD to Ava Taylor.",
+      "Recipient": "987987987"
+    },
+    {
+      "id": "6b31",
+      "Id": "275c6161-6d4b-4ff6-a245-72a2c9a38479",
+      "Message": "Payment rejected for 400 USD to Mia Harris.",
+      "Recipient": "951951951"
+    },
+    {
+      "id": "2917",
+      "Id": "88cf8f50-0d0f-4b3e-94a6-3d38999896f8",
+      "Message": "Payment approved for 1600 USD to Charlotte Clark.",
+      "Recipient": "258258258"
+    }
+  ]
 }

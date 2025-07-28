@@ -7,15 +7,22 @@ namespace PaymentProcessor.Worker.Adapters;
 public static class AdaptersDependency
 {
   public static void AddAdapters(
-     this IServiceCollection services,
-     IConfiguration configuration)
+    this IServiceCollection services,
+    IConfiguration configuration)
   {
+    var baseUrl = configuration.GetValue<string>(key: "ExternalService:BaseUrl");
+    ArgumentException.ThrowIfNullOrEmpty(baseUrl);
+
     services.AddHttpClient<IPaymentExternalService, PaymentExternalService>(client =>
     {
-          var baseUrl = configuration.GetValue<string>("PaymentService:BaseUrl");
-          ArgumentException.ThrowIfNullOrEmpty(baseUrl);
-          client.BaseAddress = new Uri(baseUrl);
-          client.Timeout = TimeSpan.FromSeconds(30);
+      client.BaseAddress = new Uri(baseUrl);
+      client.Timeout = TimeSpan.FromSeconds(30);
+    });
+
+    services.AddHttpClient<INotificationExternalService, NotificationExternalService>(client =>
+    {
+      client.BaseAddress = new Uri(baseUrl);
+      client.Timeout = TimeSpan.FromSeconds(30);
     });
   }
 }
