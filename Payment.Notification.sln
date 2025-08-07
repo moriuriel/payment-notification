@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{ADE6DF47-168F-4F4C-B4A0-361B9108246E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{CDD48E9F-2C12-429C-9B95-3DFAF0D145A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaymentProcessor.Unit.Test", "tests\Payment.Notification.Unit.Test\PaymentProcessor.Unit.Test.csproj", "{4E6B99EC-09B0-449E-90AA-B1D3E668449E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaymentNotification.Worker", "src\PaymentNotification.Worker\PaymentNotification.Worker.csproj", "{79E3DFC2-9158-476F-95CF-94BA1F2C1509}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4E6B99EC-09B0-449E-90AA-B1D3E668449E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E6B99EC-09B0-449E-90AA-B1D3E668449E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E6B99EC-09B0-449E-90AA-B1D3E668449E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E6B99EC-09B0-449E-90AA-B1D3E668449E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79E3DFC2-9158-476F-95CF-94BA1F2C1509}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79E3DFC2-9158-476F-95CF-94BA1F2C1509}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79E3DFC2-9158-476F-95CF-94BA1F2C1509}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79E3DFC2-9158-476F-95CF-94BA1F2C1509}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4E6B99EC-09B0-449E-90AA-B1D3E668449E} = {CDD48E9F-2C12-429C-9B95-3DFAF0D145A5}
+		{79E3DFC2-9158-476F-95CF-94BA1F2C1509} = {ADE6DF47-168F-4F4C-B4A0-361B9108246E}
+	EndGlobalSection
+EndGlobal
