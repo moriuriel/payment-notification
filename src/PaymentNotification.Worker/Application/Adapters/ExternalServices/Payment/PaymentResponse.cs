@@ -1,6 +1,6 @@
 using System.Text.Json.Serialization;
 
-namespace PaymentProcessor.Worker.Application.Adapters.ExternalServices.Payment;
+namespace PaymentNotification.Worker.Application.Adapters.ExternalServices.Payment;
 
 public sealed class PaymentResponse
 {

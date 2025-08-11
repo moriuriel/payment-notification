@@ -1,6 +1,6 @@
 using System;
-using PaymentProcessor.Worker.Application.Adapters.ExternalServices.Notification;
-using PaymentProcessor.Worker.Application.Handlers.NotifyPayment;
+using PaymentNotification.Worker.Application.Adapters.ExternalServices.Notification;
+using PaymentNotification.Worker.Application.Handlers.NotifyPayment;
 
 namespace PaymentProcessor.Worker.Application;
 

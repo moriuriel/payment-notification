@@ -1,6 +1,6 @@
-using PaymentProcessor.Worker.Application.Adapters.ExternalServices.Payment;
+using PaymentNotification.Worker.Application.Adapters.ExternalServices.Payment;
 
-namespace PaymentProcessor.Worker.Application.Adapters.ExternalServices.Notification;
+namespace PaymentNotification.Worker.Application.Adapters.ExternalServices.Notification;
 
 public interface ISendNotificationRequestFactory
 {

@@ -1,7 +1,7 @@
-using PaymentProcessor.Worker.Application.Adapters.ExternalServices;
-using PaymentProcessor.Worker.Application.Adapters.ExternalServices.Notification;
+using PaymentNotification.Worker.Application.Adapters.ExternalServices;
+using PaymentNotification.Worker.Application.Adapters.ExternalServices.Notification;
 
-namespace PaymentProcessor.Worker.Application.Handlers.NotifyPayment;
+namespace PaymentNotification.Worker.Application.Handlers.NotifyPayment;
 
 internal sealed class NotifyPaymentHandler(
      IPaymentExternalService paymentExternalService,

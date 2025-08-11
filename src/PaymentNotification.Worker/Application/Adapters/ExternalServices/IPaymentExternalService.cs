@@ -1,7 +1,7 @@
-using PaymentProcessor.Worker.Application.Adapters.ExternalServices.Payment;
+using PaymentNotification.Worker.Application.Adapters.ExternalServices.Payment;
 using PaymentProcessor.Worker.Application.Shared;
 
-namespace PaymentProcessor.Worker.Application.Adapters.ExternalServices;
+namespace PaymentNotification.Worker.Application.Adapters.ExternalServices;
 
 public interface IPaymentExternalService
 {

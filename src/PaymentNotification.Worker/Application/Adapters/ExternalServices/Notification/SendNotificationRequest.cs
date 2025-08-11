@@ -1,4 +1,4 @@
-namespace PaymentProcessor.Worker.Application.Adapters.ExternalServices.Notification;
+namespace PaymentNotification.Worker.Application.Adapters.ExternalServices.Notification;
 
 public class SendNotificationRequest
 {     

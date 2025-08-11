@@ -1,8 +1,7 @@
+using PaymentNotification.Worker.Adapters.ExternalServices;
+using PaymentNotification.Worker.Application.Adapters.ExternalServices;
 
-using PaymentProcessor.Worker.Adapters.ExternalServices;
-using PaymentProcessor.Worker.Application.Adapters.ExternalServices;
-
-namespace PaymentProcessor.Worker.Adapters;
+namespace PaymentNotification.Worker.Adapters;
 
 public static class AdaptersDependency
 {

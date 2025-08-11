@@ -1,5 +1,5 @@
-using PaymentProcessor.Worker;
-using PaymentProcessor.Worker.Adapters;
+using PaymentNotification.Worker;
+using PaymentNotification.Worker.Adapters;
 using PaymentProcessor.Worker.Application;
 
 var builder = Host.CreateApplicationBuilder(args);

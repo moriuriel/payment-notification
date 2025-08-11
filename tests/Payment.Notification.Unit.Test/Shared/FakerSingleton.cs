@@ -1,6 +1,6 @@
 using Bogus;
 
-namespace PaymentProcessor.Unit.Test.Shared;
+namespace PaymentNotification.Unit.Test.Shared;
 
 public sealed class FakerSingleton
 {

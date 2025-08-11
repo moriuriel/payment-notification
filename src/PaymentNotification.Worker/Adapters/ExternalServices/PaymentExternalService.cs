@@ -1,10 +1,9 @@
 using System.Text.Json;
-using Microsoft.Extensions.Logging;
-using PaymentProcessor.Worker.Application.Adapters.ExternalServices;
-using PaymentProcessor.Worker.Application.Adapters.ExternalServices.Payment;
+using PaymentNotification.Worker.Application.Adapters.ExternalServices;
+using PaymentNotification.Worker.Application.Adapters.ExternalServices.Payment;
 using PaymentProcessor.Worker.Application.Shared;
 
-namespace PaymentProcessor.Worker.Adapters.ExternalServices;
+namespace PaymentNotification.Worker.Adapters.ExternalServices;
 
 public class PaymentExternalService(
      HttpClient httpClient,

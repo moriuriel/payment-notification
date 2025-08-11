@@ -1,4 +1,4 @@
-namespace PaymentProcessor.Unit.Test.Shared;
+namespace PaymentNotification.Unit.Test.Shared;
 
 public abstract class BaseBuilder<T> where T : class
 {

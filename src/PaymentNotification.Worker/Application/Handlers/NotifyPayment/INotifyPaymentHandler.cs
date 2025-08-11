@@ -1,4 +1,4 @@
-namespace PaymentProcessor.Worker.Application.Handlers.NotifyPayment;
+namespace PaymentNotification.Worker.Application.Handlers.NotifyPayment;
 
 public interface INotifyPaymentHandler
 {

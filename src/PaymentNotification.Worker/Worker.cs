@@ -1,6 +1,6 @@
-using PaymentProcessor.Worker.Application.Handlers.NotifyPayment;
+using PaymentNotification.Worker.Application.Handlers.NotifyPayment;
 
-namespace PaymentProcessor.Worker;
+namespace PaymentNotification.Worker;
 
 public class Worker(
      ILogger<Worker> logger,

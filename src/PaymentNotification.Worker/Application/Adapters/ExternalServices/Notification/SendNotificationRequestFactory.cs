@@ -1,6 +1,6 @@
-using PaymentProcessor.Worker.Application.Adapters.ExternalServices.Payment;
+using PaymentNotification.Worker.Application.Adapters.ExternalServices.Payment;
 
-namespace PaymentProcessor.Worker.Application.Adapters.ExternalServices.Notification;
+namespace PaymentNotification.Worker.Application.Adapters.ExternalServices.Notification;
 
 public sealed class SendNotificationRequestFactory : ISendNotificationRequestFactory
 {
@@ -14,13 +14,11 @@ public sealed class SendNotificationRequestFactory : ISendNotificationRequestFac
                Status.Rejected => SendNotificationRequest.Factory(
                     payment.Id,
                     message: $"Payment rejected for {payment.Amount} {payment.Currency} to {payment.Receiver.Name}.",
-                    recipient: payment.Payer.TaxId
-               ),
+                    recipient: payment.Payer.TaxId),
                Status.Pending => SendNotificationRequest.Factory(
                     payment.Id,
                     message: $"Payment Pending for {payment.Amount} {payment.Currency} to {payment.Receiver.Name}.",
-                    recipient: payment.Payer.TaxId
-               ),
+                    recipient: payment.Payer.TaxId),
                _ => throw new ArgumentOutOfRangeException(nameof(payment.Status), payment.Status, "Unknown payment status")
           };
 }

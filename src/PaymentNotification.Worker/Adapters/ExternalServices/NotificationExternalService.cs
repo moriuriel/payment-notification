@@ -1,9 +1,9 @@
 using System.Text;
 using System.Text.Json;
-using PaymentProcessor.Worker.Application.Adapters.ExternalServices;
-using PaymentProcessor.Worker.Application.Adapters.ExternalServices.Notification;
+using PaymentNotification.Worker.Application.Adapters.ExternalServices;
+using PaymentNotification.Worker.Application.Adapters.ExternalServices.Notification;
 
-namespace PaymentProcessor.Worker.Adapters.ExternalServices;
+namespace PaymentNotification.Worker.Adapters.ExternalServices;
 
 public sealed class NotificationExternalService(
      HttpClient httpClient,
@@ -24,7 +24,9 @@ public sealed class NotificationExternalService(
                cancellationToken);
           if (!result.IsSuccessStatusCode)
           {
-               logger.LogWarning("Failed to send notification. StatusCode: {StatusCode}", result.StatusCode);
+               logger.LogWarning(
+                    message: "Failed to send notification. StatusCode: {StatusCode}",
+                    result.StatusCode);
                return false;
           }
           
